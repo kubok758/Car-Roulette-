@@ -100,6 +100,17 @@
     back: '<path d="m15 18-6-6 6-6"/>',
     target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>',
     dice: '<rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 8h.01M16 16h.01M12 12h.01M16 8h.01M8 16h.01"/>',
+    calendar: '<rect x="3" y="4" width="18" height="17" rx="3"/><path d="M8 2v4M16 2v4M3 10h18"/>',
+    globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>',
+    body: '<path d="M3 16v-3l2.5-5h13L21 13v3"/><path d="M3 16h18"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/>',
+    layers: '<path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/>',
+    wheel: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/><path d="M12 14.5V21M9.6 11.2 3.4 9.8M14.4 11.2l6.2-1.4"/>',
+    fuel: '<path d="M4 21V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v16"/><path d="M3 21h13M15 9h2a2 2 0 0 1 2 2v6a1.5 1.5 0 0 0 3 0V8l-3-3"/><path d="M7 7h5"/>',
+    gauge: '<path d="M4 18a9 9 0 1 1 16 0"/><path d="m12 13 4-4"/><circle cx="12" cy="13" r="1"/>',
+    repeat: '<path d="m17 2 4 4-4 4"/><path d="M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4"/><path d="M21 13v2a3 3 0 0 1-3 3H3"/>',
+    soundOn: '<path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/>',
+    soundOff: '<path d="M11 5 6 9H2v6h4l5 4z"/><path d="m23 9-6 6M17 9l6 6"/>',
+    arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
   };
 
   const icon = (name) => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICONS[name] || ''}</svg>`;
@@ -125,8 +136,8 @@
       wheels: LOW,
     },
     hatch: {
-      body: 'M14 46V34Q14 28 19 25L29 17Q32 16 38 16H88Q94 16 99 20L112 30 140 32Q150 33 150 39V46H132A10 10 0 0 0 112 46H52A10 10 0 0 0 32 46Z',
-      glass: 'M22 28 32 20H94L106 30ZM64 20V30',
+      body: 'M16 46V35Q16 31 20 29L36 17Q39 16 44 16H88Q94 16 99 20L112 30 140 32Q150 33 150 39V46H132A10 10 0 0 0 112 46H52A10 10 0 0 0 32 46Z',
+      glass: 'M27 29 39 20H94L106 30ZM67 20V30',
       wheels: [
         [42, 46, 8],
         [122, 46, 8],
@@ -612,6 +623,7 @@
     renderResult();
     renderHeader();
     renderPoolBar();
+    renderRecent();
     celebrate(car, isNew);
     if (unlocked.length) {
       setTimeout(() => announceAchievements(unlocked), 900);
@@ -701,16 +713,16 @@
   function specsHtml(car) {
     const seen = state.seen[car.id];
     const specs = [
-      ['Годы выпуска', Core.yearsLabel(car)],
-      ['Страна', Core.COUNTRIES[car.country]],
-      ['Кузов', Core.listLabel(car.bodies, Core.BODIES)],
-      ['Класс', Core.CLASSES[car.cls]],
-      ['Привод', Core.drivesLabel(car)],
-      ['Силовая установка', Core.fuelsLabel(car)],
-      ['Мощность', Core.powerLabel(car) || 'нет данных'],
-      ['Выпадала', seen ? countLabel(seen[0], TIMES) : 'ещё ни разу'],
+      ['calendar', 'Годы выпуска', Core.yearsLabel(car)],
+      ['globe', 'Страна', Core.COUNTRIES[car.country]],
+      ['body', 'Кузов', Core.listLabel(car.bodies, Core.BODIES)],
+      ['layers', 'Класс', Core.CLASSES[car.cls]],
+      ['wheel', 'Привод', Core.drivesLabel(car)],
+      ['fuel', 'Силовая установка', Core.fuelsLabel(car)],
+      ['gauge', 'Мощность', Core.powerLabel(car) || 'нет данных'],
+      ['repeat', 'Выпадала', seen ? countLabel(seen[0], TIMES) : 'ещё ни разу'],
     ];
-    return specs.map(([k, v]) => `<div class="spec"><small>${k}</small><b>${esc(v)}</b></div>`).join('');
+    return specs.map(([ic, k, v]) => `<div class="spec"><small>${icon(ic)}${k}</small><b>${esc(v)}</b></div>`).join('');
   }
 
   function carCardHtml(car, ctx) {
@@ -730,7 +742,8 @@
           ? `<div class="odds"><strong>${oddsLabel(Core.carOdds(car, pool, state.settings.mode))}</strong>шанс в текущем пуле</div>`
           : '<div class="odds"><strong>—</strong>не входит в текущий пул</div>';
     const genLine = `${esc(car.gen)} · ${esc(Core.yearsLabel(car))}`;
-    return `<article class="card car-card" style="--rc: var(--r${r})">
+    return `<article class="card car-card r${r}" style="--rc: var(--r${r})">
+      <span class="holo" aria-hidden="true"></span>
       <div class="car-head">
         <div>
           <div class="car-tags">${tags}</div>
@@ -739,7 +752,11 @@
         </div>
         <button class="fav-btn" type="button" data-action="fav" data-id="${esc(car.id)}" aria-pressed="${fav}">${icon('star')}<span>${fav ? 'В гараже' : 'В гараж'}</span></button>
       </div>
-      <div class="car-visual">${silhouette(car)}${odds}</div>
+      <div class="car-stage">
+        <span class="stage-brand" aria-hidden="true">${esc(car.brand)}</span>
+        <div class="stage-car">${silhouette(car)}<div class="reflection" aria-hidden="true">${silhouette(car)}</div></div>
+        ${odds}
+      </div>
       <div class="specs">${specsHtml(car)}</div>
       ${car.fact ? `<p class="fact">${esc(car.fact)}</p>` : ''}
       <div class="car-actions">
@@ -757,7 +774,7 @@
     const box = $('#result');
     box.classList.remove('dimmed');
     if (!current) {
-      box.innerHTML = '';
+      box.innerHTML = welcomeHtml();
       return;
     }
     box.innerHTML = carCardHtml(current.car, { odds: current.odds, isNew: current.isNew });
@@ -765,6 +782,77 @@
     if (rect.top > window.innerHeight - 120) {
       box.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'nearest' });
     }
+  }
+
+  function welcomeHtml() {
+    const odds = Core.tierOdds(db.cars, state.settings.mode);
+    const steps = [
+      ['🎰', 'Крути барабаны', 'Кнопка «Крутить», Пробел или Enter. Марка, модель и поколение останавливаются по очереди.'],
+      ['💎', 'Лови редкие машины', 'Шесть редкостей — от обычных до мифических, выпущенных единицами экземпляров.'],
+      ['🏆', 'Собирай коллекцию', `${countLabel(db.cars.length, CARS)}, ${db.brands.length} марок и ${Core.ACHIEVEMENTS.length} достижений. Прогресс хранится в браузере.`],
+      ['🎯', 'Настрой пул', 'Фильтры по стране, марке, эпохе, кузову и мощности — крути только то, что интересно.'],
+    ];
+    return `<article class="card welcome">
+      <h2>Как играть</h2>
+      <ol class="steps">${steps
+        .map(([e, t, d]) => `<li><span class="step-ico" aria-hidden="true">${e}</span><div><b>${t}</b><small>${esc(d)}</small></div></li>`)
+        .join('')}</ol>
+      <div class="legend" aria-label="Редкости и шансы">${Core.RARITIES.map(
+        (rr, i) => `<span class="legend-item" style="--rc: var(--r${i})"><i></i>${rr.name}<small>${percent(odds[i])}</small></span>`
+      ).join('')}</div>
+      <button class="btn block" type="button" data-action="open" data-view="odds">${icon('info')}Как работают шансы</button>
+    </article>`;
+  }
+
+  function renderRecent() {
+    const box = $('#recent');
+    const seen = new Set();
+    const cars = [];
+    for (const h of state.history) {
+      if (seen.has(h.id)) continue;
+      seen.add(h.id);
+      const car = db.byId.get(h.id);
+      if (car) cars.push(car);
+      if (cars.length >= 12) break;
+    }
+    box.hidden = !cars.length;
+    if (!cars.length) {
+      box.innerHTML = '';
+      return;
+    }
+    box.innerHTML = `<div class="block-head"><h3>Последние находки</h3><button class="link-btn" type="button" data-action="open" data-view="history">Вся история${icon('arrow')}</button></div>
+      <div class="recent-list">${cars
+        .map(
+          (c) => `<button class="recent-item" type="button" data-action="open-car" data-id="${esc(c.id)}" style="--rc: var(--r${c.rarity})" title="${esc(Core.fullName(c))}">
+            ${silhouette(c)}<b>${esc(c.brand)}</b><span>${esc(c.model)}</span></button>`
+        )
+        .join('')}</div>`;
+  }
+
+  /* 3D-наклон карточки за курсором */
+  const tiltQuery = window.matchMedia ? window.matchMedia('(hover: hover) and (pointer: fine)') : { matches: false };
+  let tiltFrame = 0;
+  function onTiltMove(e) {
+    const card = e.target.closest && e.target.closest('#result .car-card');
+    if (!card || !tiltQuery.matches || reducedMotion()) return;
+    cancelAnimationFrame(tiltFrame);
+    tiltFrame = requestAnimationFrame(() => {
+      const r = card.getBoundingClientRect();
+      const px = Math.min(1, Math.max(0, (e.clientX - r.left) / r.width));
+      const py = Math.min(1, Math.max(0, (e.clientY - r.top) / r.height));
+      card.classList.add('tilting');
+      card.style.setProperty('--ry', `${((px - 0.5) * 7).toFixed(2)}deg`);
+      card.style.setProperty('--rx', `${((0.5 - py) * 5).toFixed(2)}deg`);
+      card.style.setProperty('--mx', `${(px * 100).toFixed(1)}%`);
+      card.style.setProperty('--my', `${(py * 100).toFixed(1)}%`);
+    });
+  }
+  function onTiltLeave() {
+    cancelAnimationFrame(tiltFrame);
+    const card = $('#result .car-card');
+    if (!card) return;
+    card.classList.remove('tilting');
+    ['--rx', '--ry', '--mx', '--my'].forEach((v) => card.style.removeProperty(v));
   }
 
   function refreshCardsFor(id) {
@@ -852,10 +940,24 @@
   function renderHeader() {
     $('#brandMeta').textContent = `${countLabel(db.cars.length, CARS)} · ${db.brands.length} марок`;
     const unique = Object.keys(state.seen).length;
+    const pct = unique / db.cars.length;
+    $('#collectCount').textContent = `${fmt(unique)} / ${fmt(db.cars.length)}`;
+    $('#collectRing').setAttribute('stroke-dasharray', `${unique ? Math.max(3, pct * 100).toFixed(2) : 0} 100`);
+    $('.collect-chip').setAttribute('aria-label', `Коллекция: открыто ${fmt(unique)} из ${fmt(db.cars.length)}`);
+    renderSoundButton();
     const streak = Core.currentStreak(state);
     $('#statLine').textContent = unique
       ? `Открыто ${fmt(unique)} из ${fmt(db.cars.length)}${streak > 1 ? ` · серия ${countLabel(streak, DAYS)}` : ''}`
       : `${db.brands.length} марок · ${fmt(db.models.length)} моделей · честный рандом`;
+  }
+
+  function renderSoundButton() {
+    const btn = $('#soundBtn');
+    const on = state.settings.sound && state.settings.volume > 0;
+    btn.innerHTML = icon(on ? 'soundOn' : 'soundOff');
+    btn.setAttribute('aria-pressed', String(on));
+    btn.setAttribute('aria-label', on ? 'Выключить звук' : 'Включить звук');
+    btn.title = on ? 'Выключить звук' : 'Включить звук';
   }
 
   function filterChips() {
@@ -973,7 +1075,10 @@
   [sheet, carDialog, confirmDialog].forEach((dlg) => {
     dlg.addEventListener('close', () => {
       syncBodyLock();
-      if (dlg === sheet) sheetView = null;
+      if (dlg === sheet) {
+        sheetView = null;
+        markDock();
+      }
       if (dlg === carDialog && location.hash.startsWith('#car=')) {
         history.replaceState(null, '', location.pathname + location.search);
       }
@@ -1001,8 +1106,16 @@
     Object.assign(sheetParams, params);
     sheetView = view;
     showDialog(sheet);
+    markDock();
     renderSheet();
     $('.sheet-body', sheet).scrollTop = 0;
+  }
+
+  function markDock() {
+    $$('.dock-nav button').forEach((b) => {
+      if (b.dataset.view === sheetView) b.setAttribute('aria-current', 'true');
+      else b.removeAttribute('aria-current');
+    });
   }
 
   function renderSheet() {
@@ -1797,6 +1910,7 @@
         s[name] = el.type === 'range' ? Number(el.value) : el.checked;
         applySettings();
         save();
+        renderSoundButton();
         if (name === 'sound' && s.sound) {
           Fx.Sound.unlock();
           Fx.Sound.click();
@@ -1878,6 +1992,7 @@
     renderMachineControls();
     if (current && !db.byId.has(current.car.id)) current = null;
     renderResult();
+    renderRecent();
     if (!current) showIdleReels();
     if (sheetView) renderSheet();
   }
@@ -1937,6 +2052,20 @@
       case 'mode':
         setSetting('mode', el.dataset.value);
         break;
+      case 'toggle-sound': {
+        const on = !(state.settings.sound && state.settings.volume > 0);
+        state.settings.sound = on;
+        if (on && state.settings.volume === 0) state.settings.volume = 0.6;
+        applySettings();
+        save();
+        renderSoundButton();
+        if (on) {
+          Fx.Sound.unlock();
+          Fx.Sound.click();
+        }
+        if (sheetView === 'settings') renderSheet();
+        break;
+      }
       case 'set':
         setSetting(el.dataset.name, el.dataset.value);
         break;
@@ -1953,6 +2082,7 @@
         const [removed] = state.history.splice(index, 1);
         save();
         renderSheet();
+        renderRecent();
         toast('Запись удалена', {
           icon: '🗑️',
           action: {
@@ -1960,6 +2090,7 @@
             fn: () => {
               state.history.splice(index, 0, removed);
               save();
+              renderRecent();
               if (sheetView === 'history') renderSheet();
             },
           },
@@ -1973,6 +2104,7 @@
           state.history = [];
           save();
           renderSheet();
+          renderRecent();
           toast('История очищена', {
             icon: '🧹',
             action: {
@@ -1980,6 +2112,7 @@
               fn: () => {
                 state.history = backup;
                 save();
+                renderRecent();
                 if (sheetView === 'history') renderSheet();
               },
             },
@@ -2058,6 +2191,9 @@
     }
   });
 
+  $('#result').addEventListener('pointermove', onTiltMove);
+  $('#result').addEventListener('pointerleave', onTiltLeave);
+
   const quickSpin = $('#quickSpin');
   quickSpin.addEventListener('click', async () => {
     if (spinning) return;
@@ -2123,7 +2259,9 @@
       machine.style.setProperty('--win', RARITY_COLORS[last.rarity]);
     } else {
       showIdleReels();
+      renderResult();
     }
+    renderRecent();
     setSpinButton();
     // Шрифт может догрузиться позже и поменять высоту строк.
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => reels.forEach((r) => r.recenter()));
