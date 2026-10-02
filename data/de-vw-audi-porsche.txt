@@ -1,6 +1,16 @@
 # Германия: Volkswagen, Audi, Porsche
 
 @Volkswagen | DE | aka=Фольксваген VW
+Type 3 | sedan/wagon/lift | C | R | P
+- 1500/1600 | 1961-1973 | 45-65
+
+Santana | sedan/wagon | D | F | P/D
+> В Китае Santana выпускали почти 30 лет — для целого поколения китайских таксистов это была главная машина.
+- B2 | 1981-1984 | 75-115
+
+ID.7 | lift/wagon | D | R/A | E
+- I | 2023- | 286-340
+
 Caddy | van/minivan | LCV | F | P/D
 - III | 2003-2015 | 75-140
 - IV | 2015-2020 | 75-150
@@ -153,6 +163,9 @@ XL1 | coupe | C | R | PH | r=epic
 - I | 2013-2016 | 69
 
 @Audi | DE | aka=Ауди
+Q6 e-tron | xover | D | R/A | E
+- I | 2024- | 306-517
+
 Q4 e-tron | xover | C | R/A | E
 - F4 | 2021- | 170-340
 

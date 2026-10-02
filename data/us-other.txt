@@ -1,6 +1,10 @@
 # США: Chrysler, Dodge, RAM, Jeep, Plymouth, AMC, Tesla, Rivian, Lucid и малые марки
 
 @Chrysler | US | aka=Крайслер
+Sebring | sedan/cabrio/coupe | D | F | P
+- JR | 2000-2006 | 147-203
+- JS | 2006-2010 | 150-235
+
 300C | sedan/wagon | E | R/A | P/D
 > Массивный 300C с высокой линией окон в народе прозвали «бюджетным Bentley».
 - LX | 2004-2010 | 190-431
@@ -25,6 +29,19 @@ Pacifica | minivan | D | F/A | P/PH
 - RU | 2016- | 260-287
 
 @Dodge | US | aka=Додж
+Neon | sedan/coupe | C | F | P
+- I | 1994-1999 | 132-150
+- II | 1999-2005 | 132-230
+
+Caliber | hatch | C | F/A | P/D
+- PM | 2006-2012 | 115-285
+
+Nitro | suv | D | R/4 | P/D
+- KA | 2007-2012 | 177-260
+
+Journey | xover | D | F/A | P/D
+- JC | 2008-2020 | 140-283
+
 Charger | coupe | S | R | P
 - I | 1966-1967 | 230-425
 - II | 1968-1970 | 230-425
@@ -65,6 +82,12 @@ Ram | pickup | LCV | R/4 | P/D
 > Версия TRX с мотором V8 на 702 л.с. — один из самых мощных серийных пикапов в истории.
 
 @Jeep | US | aka=Джип
+Commander | suv | E | R/4 | P/D
+- XK | 2005-2010 | 210-335
+
+Patriot | xover | C | F/A | P/D
+- MK74 | 2007-2017 | 140-172
+
 Willys MB | suv | B | 4 | P | r=rare
 > Willys MB — армейский «джип» Второй мировой; по ленд-лизу тысячи таких машин получила Красная армия.
 - MB | 1941-1945 | 60

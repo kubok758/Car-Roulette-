@@ -1,6 +1,34 @@
 # США: Ford, Lincoln, Chevrolet, GMC, Cadillac, Buick, Pontiac, Hummer
 
 @Ford | US | aka=Форд
+Anglia | sedan | B | R | P
+> Летающий бирюзовый Ford Anglia семьи Уизли — одна из главных машин фильма «Гарри Поттер и Тайная комната».
+- 105E | 1959-1967 | 39-48
+
+Cortina | sedan/wagon | C | R | P
+> Cortina была самым продаваемым автомобилем Великобритании в 1970-х.
+- Mk1 | 1962-1966 | 48-105
+- Mk2 | 1966-1970 | 54-109
+- Mk3 | 1970-1976 | 57-112
+- Mk4 | 1976-1979 | 57-112
+- Mk5 | 1979-1982 | 57-112
+
+Granada | sedan/wagon/coupe | E | R | P/D
+- Mk1 | 1972-1977 | 60-160
+- Mk2 | 1977-1985 | 60-160
+- Mk3 | 1985-1994 | 90-195 | b=lift/sedan/wagon | d=R/A
+
+Torino | coupe/sedan | D | R | P
+- Gran Torino | 1972-1976 | 140-250
+> Красно-белый Gran Torino — машина из сериала «Старски и Хатч», а модель 1972 года сыграла главную роль в фильме Клинта Иствуда «Гран Торино».
+
+Probe | coupe | S | F | P
+- I | 1988-1992 | 110-145
+- II | 1992-1997 | 115-165
+
+Cougar | coupe | S | F | P
+- I | 1998-2002 | 125-170
+
 Taurus | sedan/wagon | D | F | P
 > Обтекаемый Taurus 1985 года спас Ford в 80-х и несколько лет был самым продаваемым легковым автомобилем в США.
 - I | 1985-1991 | 90-220
@@ -199,6 +227,10 @@ Navigator | suv | F | R/4 | P
 - IV | 2017- | 450-457
 
 @Chevrolet | US | aka=Шевроле Шевролет
+Rezzo | minivan | C | F | P
+> Rezzo, он же Daewoo Tacuma, — компактвэн, кузов которого разработало ателье Pininfarina.
+- I | 2000-2008 | 90-122
+
 Spark | hatch | A | F | P/E | c=KR
 - M200 | 2005-2010 | 51-67
 - M300 | 2009-2015 | 68-130
@@ -351,6 +383,9 @@ Yukon | suv | E | R/4 | P/D
 - V | 2021- | 277-420
 
 @Cadillac | US | aka=Кадиллак | floor=uncommon
+CT6 | sedan | F | R/A | P/PH
+- I | 2016-2020 | 265-550
+
 Eldorado | coupe/cabrio | F | R | P
 - 1959 | 1959-1960 | 345
 > У Cadillac 1959 года самые высокие «плавники» в истории автомобилестроения.
@@ -378,6 +413,10 @@ Lyriq | xover | E | R/A | E
 - I | 2022- | 340-615
 
 @Buick | US | aka=Бьюик
+Enclave | xover | E | F/A | P
+- I | 2007-2017 | 275-288
+- II | 2017- | 310-328
+
 Riviera | coupe | E | R | P
 > Riviera 1963 года создавалась как ответ Ford Thunderbird и считается одним из самых красивых американских купе.
 - I | 1963-1965 | 325-360

@@ -1,6 +1,9 @@
 # Германия: Opel, Trabant, Wartburg, NSU, RUF
 
 @Opel | DE | aka=Опель
+Adam | hatch | A | F | P
+- I | 2012-2019 | 70-150
+
 Rekord | sedan/wagon | D | R | P/D
 - E | 1977-1986 | 60-115
 

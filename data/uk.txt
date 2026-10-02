@@ -127,6 +127,12 @@ Countryman | xover | C | F/A | P/D
 - U25 | 2023- | 136-317 | f=P/D/E
 
 @Rover | UK | aka=Ровер
+25 | hatch | C | F | P/D
+- R3 | 1999-2005 | 84-160
+
+45 | sedan/hatch | C | F | P/D
+- HH-R | 1999-2005 | 101-150
+
 SD1 | lift | E | R | P/D
 > Rover SD1 стал «Европейским автомобилем года» 1977.
 - I | 1976-1986 | 90-190
@@ -181,6 +187,10 @@ Stag | cabrio | S | R | P
 - I | 1970-1977 | 145
 
 @Aston Martin | UK | aka=Астон Мартин | floor=rare
+V8 | coupe/cabrio | S | R | P | r=epic
+> V8 Vantage 1977 года называли первым британским суперкаром.
+- I | 1969-1989 | 300-438
+
 DB4 | coupe | S | R | P | r=epic
 - I | 1958-1963 | 240-314
 
@@ -256,6 +266,9 @@ Bentayga | xover | F | A | P/D/PH
 - I | 2015- | 435-635
 
 @Rolls-Royce | UK | aka=Роллс-Ройс | floor=rare
+Silver Spirit | sedan | F | R | P
+- I | 1980-1998 | 200-300
+
 Silver Ghost | cabrio | F | R | P | r=legendary
 > Silver Ghost называли «лучшим автомобилем в мире»: в 1907 году он прошёл испытание пробегом около 24 тысяч километров без серьёзных поломок.
 - 40/50 | 1907-1926 | 48-80

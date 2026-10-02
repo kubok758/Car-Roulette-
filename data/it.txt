@@ -1,6 +1,19 @@
 # Италия
 
 @Fiat | IT | aka=Фиат
+Barchetta | roadster | S | F | P
+- 183 | 1995-2005 | 130
+
+Palio | hatch/sedan/wagon | B | F | P/D
+> Palio создавали как «мировой автомобиль» для Бразилии, Индии, Турции и других развивающихся рынков.
+- 178 | 1996-2017 | 60-130
+
+500L | minivan | C | F | P/D
+- 330 | 2012-2022 | 85-120
+
+500X | xover | B | F/A | P/D
+- 334 | 2014- | 110-170 | f=P/D/H
+
 131 | sedan/wagon | D | R | P/D
 - I | 1974-1984 | 65-140
 
@@ -121,6 +134,12 @@ Ducato | van | LCV | F | D
 - I | 2024- | 240-280
 
 @Alfa Romeo | IT | aka=Альфа Ромео | floor=uncommon
+GTV | coupe | S | F | P
+- 916 | 1995-2006 | 150-240
+
+166 | sedan | E | F | P/D
+- 936 | 1998-2007 | 150-226
+
 Giulia | sedan | D | R | P/D
 - 105 | 1962-1978 | 78-115 | f=P
 - 952 | 2015- | 150-520 | d=R/A
@@ -343,6 +362,10 @@ F80 | coupe | HC | A | PH | r=legendary
 - I | 2025- | 1200
 
 @Lamborghini | IT | aka=Ламборгини Ламба | floor=epic
+Espada | coupe | SC | R | P | r=legendary
+> Espada — четырёхместный Lamborghini с V12; в 1970-х это была самая массовая модель марки.
+- I | 1968-1978 | 325-350
+
 350 GT | coupe | SC | R | P | r=legendary
 > По легенде, производитель тракторов Ферруччо Ламборгини занялся спорткарами, поссорившись с Энцо Феррари.
 - I | 1964-1966 | 270-280
@@ -399,6 +422,10 @@ Temerario | coupe | SC | A | PH
 - I | 2024- | 920
 
 @Maserati | IT | aka=Мазерати | floor=uncommon
+Bora | coupe | SC | R | P | r=legendary
+> Bora — первый серийный среднемоторный Maserati.
+- I | 1971-1978 | 310-330
+
 Ghibli | sedan | E | R/A | P/D
 - AM115 | 1967-1973 | 330-335 | b=coupe | k=S | d=R | f=P
 - M157 | 2013-2024 | 275-580

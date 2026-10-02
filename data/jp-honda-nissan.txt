@@ -1,6 +1,13 @@
 # Япония: Honda, Acura, Nissan, Infiniti, Datsun
 
 @Honda | JP | aka=Хонда
+CR-Z | coupe | C | F | H
+> CR-Z — редкий спортивный гибрид с механической коробкой передач.
+- ZF1 | 2010-2016 | 124-137
+
+ZR-V | xover | C | F/A | P/H
+- RZ | 2022- | 178-184
+
 Stream | minivan | C | F/A | P
 - RN1 | 2000-2006 | 130-156
 - RN6 | 2006-2014 | 140-150

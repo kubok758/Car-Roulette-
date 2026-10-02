@@ -1,6 +1,16 @@
 # Япония: Toyota и Lexus
 
 @Toyota | JP | aka=Тойота
+iQ | hatch | A | F | P
+> iQ короче трёх метров, но благодаря хитрой компоновке вмещает трёх взрослых и ребёнка.
+- AJ10 | 2008-2016 | 68-98
+
+Corolla Verso | minivan | C | F | P/D
+- AR10 | 2004-2009 | 110-177
+
+Verso | minivan | C | F | P/D
+- AR20 | 2009-2018 | 112-177
+
 Carina E | sedan/lift/wagon | D | F | P/D
 - T190 | 1992-1997 | 75-175
 
@@ -303,6 +313,13 @@ Sera | coupe | B | F | P | r=uncommon
 - EXY10 | 1990-1996 | 110
 
 @Lexus | JP | aka=Лексус | floor=uncommon
+LBX | xover | B | F/A | H
+- I | 2023- | 136-306 | f=P/H
+
+LM | minivan | F | F/A | H
+- AH30 | 2020-2023 | 250-306
+- AH40 | 2023- | 250-306
+
 LS | sedan | F | R/A | P/H
 > Чтобы доказать плавность хода первого LS 400, Lexus снял рекламу с пирамидой бокалов на капоте машины, работающей на стенде.
 - XF10 | 1989-1994 | 250 | f=P
