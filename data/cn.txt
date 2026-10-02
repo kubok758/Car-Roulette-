@@ -1,0 +1,315 @@
+# Китай
+
+@BYD | CN | aka=БИД Build Your Dreams
+F3 | sedan | C | F | P
+> F3 — первый массовый автомобиль BYD; внешне он заметно напоминал Toyota Corolla.
+- I | 2005-2014 | ?
+
+Qin Plus | sedan | C | F | PH/E
+- I | 2021- | ?
+
+Han | sedan | E | F/A | PH/E
+> Название Han отсылает к китайской династии Хань — у BYD целая линейка моделей «Династия».
+- I | 2020- | ?
+
+Tang | xover | E | A | PH/E
+- I | 2015-2018 | ? | f=PH
+- II | 2018- | ?
+
+Song Plus | xover | C | F | PH/E
+- I | 2020- | ?
+
+Atto 3 | xover | C | F | E | aka=Yuan Plus
+- I | 2022- | 204
+
+Dolphin | hatch | B | F | E
+- I | 2021- | 95-204
+
+Seagull | hatch | A | F | E
+> Seagull стоит в Китае около 10 тысяч долларов — один из самых доступных электромобилей в мире.
+- I | 2023- | 41-75
+
+Seal | sedan | D | R/A | E
+- I | 2022- | 204-530
+
+@Yangwang | CN | aka=Янгван | floor=epic
+U8 | suv | F | A | PH
+> Внедорожник U8 в экстренной ситуации умеет держаться на воде — режим «плавания» рассчитан примерно на полчаса.
+- I | 2023- | 1180-1197
+
+U9 | coupe | HC | A | E
+> Активная подвеска позволяет суперкару U9 буквально подпрыгивать на месте.
+- I | 2024- | 1300
+
+@Geely | CN | aka=Джили Жили
+CK | sedan | B | F | P | aka=Otaka
+- I | 2005-2016 | 94
+
+MK | sedan/hatch | B | F | P
+- I | 2006-2015 | 94-107
+
+Emgrand | sedan | C | F | P
+- EC7 | 2009-2016 | 102-139
+- SS11 | 2021- | ?
+
+Coolray | xover | B | F | P
+- SX11 | 2018- | 150-177
+
+Atlas | xover | C | F/A | P
+- NL-3 | 2016-2023 | 139-184
+- FX11 | 2023- | 200-238
+
+Tugella | xover | D | A | P
+- FY11 | 2019- | 238
+
+Monjaro | xover | D | A | P
+- KX11 | 2021- | 238
+
+@Chery | CN | aka=Чери Черри
+QQ | hatch | A | F | P
+> Из-за сходства QQ с Chevrolet Spark компания General Motors подала на Chery в суд.
+- S11 | 2003-2013 | 52-68
+
+Amulet | lift | B | F | P | aka=A15
+> Amulet построен на агрегатах SEAT Toledo первого поколения.
+- A15 | 2003-2012 | 90-94
+
+Fora | sedan | C | F | P
+- A21 | 2006-2010 | ?
+
+Tiggo | xover | C | F/A | P
+- T11 | 2005-2016 | 129-136
+
+Tiggo 4 | xover | B | F | P
+- I | 2017- | 113-150
+
+Tiggo 7 Pro | xover | C | F/A | P
+- I | 2019- | 147-170
+
+Tiggo 8 Pro | xover | D | F/A | P
+- I | 2020- | 170-197
+
+Arrizo 8 | sedan | D | F | P
+- I | 2022- | ?
+
+@Exeed | CN | aka=Эксид | floor=uncommon
+TXL | xover | D | F/A | P
+- I | 2019- | ?
+
+VX | xover | E | F/A | P
+- I | 2020- | ?
+
+RX | xover | D | F/A | P/PH
+- I | 2022- | ?
+
+@Omoda | CN | aka=Омода
+C5 | xover | B | F/A | P/E
+- I | 2022- | ?
+
+@Jaecoo | CN | aka=Джейку Жейку
+J7 | xover | C | F/A | P/PH
+- I | 2023- | ?
+
+@Jetour | CN | aka=Джетур
+X70 | xover | D | F | P
+- I | 2018- | ?
+
+Dashing | xover | C | F | P
+- I | 2022- | ?
+
+T2 | suv | E | A | P/PH
+- I | 2023- | ?
+
+@Haval | CN | aka=Хавейл Хавал Хавэйл
+H6 | xover | C | F/A | P
+> H6 много лет подряд был самым продаваемым кроссовером в Китае.
+- I | 2011-2017 | ?
+- II | 2017-2021 | ?
+- III | 2020- | ? | f=P/H/PH
+
+Jolion | xover | B | F/A | P/H
+- I | 2021- | ?
+
+F7 | xover | C | F/A | P
+> Haval F7 одним из первых встал на конвейер завода в Тульской области — первого в России завода китайской марки полного цикла.
+- I | 2019-2024 | 150-190
+
+Dargo | xover | C | F/A | P
+- I | 2022- | 192
+
+H9 | suv | E | 4 | P/D
+- I | 2014-2024 | 218-231
+- II | 2024- | 231
+
+@Great Wall | CN | aka=Грейт Вол Грейт Волл
+Hover | suv | C | 4 | P/D
+> Hover — один из первых китайских внедорожников, которые массово продавались в России.
+- H3 | 2005-2016 | ?
+- H5 | 2010-2017 | ?
+
+Wingle | pickup | LCV | R/4 | P/D
+- 5 | 2010- | ?
+
+Poer | pickup | LCV | R/4 | P/D
+- I | 2019- | ?
+
+@Tank | CN | aka=Танк | floor=uncommon
+300 | suv | D | 4 | P/H
+> Tank 300 своим угловатым ретро-дизайном напоминает сразу и Ford Bronco, и Mercedes G-Класс.
+- I | 2020- | ?
+
+500 | suv | E | 4 | P/H
+- I | 2022- | ?
+
+@Changan | CN | aka=Чанган
+Alsvin | sedan | B | F | P
+- I | 2018- | ?
+
+CS35 Plus | xover | B | F | P
+- I | 2018- | ?
+
+CS55 Plus | xover | C | F | P
+- I | 2019- | ?
+
+CS75 Plus | xover | C | F/A | P
+- I | 2019- | ?
+
+UNI-K | xover | D | F/A | P/PH
+- I | 2020- | ?
+
+UNI-V | lift | C | F | P
+- I | 2022- | ?
+
+@Hongqi | CN | aka=Хунцы Хончи | floor=uncommon
+CA72 | sedan | F | R | P | r=epic
+> Hongqi CA72 — первый лимузин КНР, на котором ездили руководители страны.
+- I | 1958-1965 | 200
+
+CA770 | sedan | F | R | P | r=rare
+> Название Hongqi переводится как «Красное знамя».
+- I | 1965-1981 | 200
+
+H9 | sedan | F | R | P/H
+- I | 2020- | ?
+
+HS5 | xover | D | F/A | P
+- I | 2019- | ?
+
+E-HS9 | xover | F | A | E
+- I | 2020- | ?
+
+@Li Auto | CN | aka=Ли Авто Lixiang Лисян
+One | xover | E | A | PH
+> Li One — гибрид с последовательной схемой: бензиновый мотор не крутит колёса, а только заряжает батарею.
+- I | 2019-2022 | ?
+
+L7 | xover | E | A | PH
+- I | 2023- | ?
+
+L9 | xover | F | A | PH
+- I | 2022- | ?
+
+MEGA | minivan | F | A | E
+- I | 2024- | ?
+
+@Nio | CN | aka=Нио
+ES8 | xover | F | A | E
+> Электромобили Nio можно не заряжать, а за несколько минут поменять батарею на автоматической станции замены.
+- I | 2018-2023 | ?
+- II | 2023- | ?
+
+ES6 | xover | E | A | E
+- I | 2019- | ?
+
+ET5 | sedan | D | A | E
+- I | 2022- | ?
+
+ET7 | sedan | F | A | E
+- I | 2022- | ?
+
+@XPeng | CN | aka=Икспенг Сяопэн
+P7 | sedan | D | R/A | E
+- I | 2020- | ?
+
+G6 | xover | D | R/A | E
+- I | 2023- | ?
+
+G9 | xover | E | R/A | E
+- I | 2022- | ?
+
+@Zeekr | CN | aka=Зикр Зекр
+001 | lift/wagon | E | R/A | E
+> Zeekr 001 FR развивает больше 1200 л.с. и разгоняется до 100 км/ч примерно за 2 секунды.
+- I | 2021- | ?
+
+009 | minivan | F | R/A | E
+- I | 2022- | ?
+
+7X | xover | D | R/A | E
+- I | 2024- | ?
+
+@Lynk & Co | CN | aka=Линк энд Ко Линк
+01 | xover | C | F/A | P/H/PH
+> В Европе Lynk & Co 01 продавали по подписке — почти как тариф мобильной связи.
+- I | 2017- | ?
+
+03 | sedan | C | F | P/PH
+- I | 2018- | ?
+
+09 | xover | E | A | P/PH
+- I | 2021- | ?
+
+@Voyah | CN | aka=Воя Вояж
+Free | xover | E | A | PH/E
+- I | 2021- | ?
+
+Dream | minivan | F | A | PH/E
+- I | 2022- | ?
+
+@Avatr | CN | aka=Аватр
+11 | xover | E | R/A | E/PH
+- I | 2022- | ?
+
+@Leapmotor | CN | aka=Липмотор
+C11 | xover | D | R/A | E/PH
+- I | 2021- | ?
+
+@Denza | CN | aka=Денза
+D9 | minivan | F | F/A | E/PH
+- I | 2022- | ?
+
+@Xiaomi | CN | aka=Сяоми Ксиаоми
+SU7 | sedan | D | R/A | E
+> SU7 — первый автомобиль производителя смартфонов Xiaomi; версия Ultra развивает 1548 л.с.
+- I | 2024- | 299-1548
+
+YU7 | xover | E | R/A | E
+- I | 2025- | 320-690
+
+@Wuling | CN | aka=Вулинг Улин
+Hongguang Mini EV | hatch | A | R | E
+> Крошечный Hongguang Mini EV стоимостью около 4,5 тысячи долларов в 2021 году стал самым продаваемым электромобилем Китая.
+- I | 2020- | 27-41
+
+@Lifan | CN | aka=Лифан
+Smily | hatch | A | F | P
+- I | 2008-2016 | 89
+
+Solano | sedan | C | F | P
+> В 2010-х Lifan был одной из самых популярных китайских марок в России; машины собирали в Черкесске.
+- I | 2008-2018 | 100-106
+
+X60 | xover | C | F | P
+- I | 2011-2018 | 128-133
+
+@JAC | CN | aka=Джак
+JS4 | xover | B | F | P
+> На основе JS4 сделан Москвич 3, который собирают на бывшем заводе Renault в Москве.
+- I | 2020- | 150
+
+T6 | pickup | LCV | R/4 | P/D
+- I | 2015- | ?
+
+@GAC | CN | aka=ГАК Гуанчжоу
+GS8 | xover | E | F/A | P/H
+- II | 2021- | ?
